@@ -9,4 +9,8 @@ public class PersonServiceImpl implements PersonService {
     public String concateName(Person person){
         return person.getName() + " " + person.getLastName();
     }
+
+    public String formatName(String name) {
+        return String.format("Hello %s!", name);
+    }
 }

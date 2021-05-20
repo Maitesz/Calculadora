@@ -19,4 +19,13 @@ public class PersonServiceTest {
         assertEquals(expected, actual);
 
     }
+
+    @Test
+    public void givenNameReturnFormatName(){
+        String name = "Maite";
+        String actual = personService.formatName(name);
+        String expected = "Hello Maite!";
+
+        assertEquals(expected, actual);
+    }
 }
